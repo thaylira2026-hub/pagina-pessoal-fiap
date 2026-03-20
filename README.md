@@ -12,7 +12,7 @@ Este projeto tem como finalidade criar uma landing page pessoal para apresentar 
 * **Background:** #ECFEFF
 * **Text:** #083344
 * **Accent:** #FACC15
-* **20px:**
+* **20px**
 
   ## Meu Logotipo
   ![Meu Logotipo](https://ui-avatars.com/api/?background=164E63&color=083344&name=Thays+Lira+de+Oliveira)
