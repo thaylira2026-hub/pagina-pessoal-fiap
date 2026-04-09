@@ -19,4 +19,4 @@ Este projeto tem como finalidade criar uma landing page pessoal para apresentar 
 
  ## Quem sou eu
 * **Nome:** Thays Lira de Oliveira
-* **RM:** 568799
+* **RM:** 568799.
