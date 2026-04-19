@@ -284,6 +284,12 @@ button:hover {
     display: inline-block;
     margin-right: 5px;
 }
+#contato label {
+    color: #164E63; 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
+}
 
 footer {
     text-align: center;
