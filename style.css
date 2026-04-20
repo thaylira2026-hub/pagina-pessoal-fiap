@@ -42,7 +42,7 @@ header {
 
 .logo-img {
     height: 40px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 nav ul {
@@ -76,7 +76,7 @@ nav a {
 
 .btn {
     padding: 12px 25px;
-    border-radius: 8px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -164,7 +164,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -197,7 +197,7 @@ table td {
     background: #164E63;
     color: white;
     padding: 4px 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 0.75rem;
     display: inline-block;
     margin-top: 10px;
@@ -213,7 +213,7 @@ table td {
     background: #F472B6;
     color: white;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     text-decoration: none;
     transition: 0.3s;
     display:flex;
@@ -235,7 +235,7 @@ table td {
 .form-box, .info-box {
     background: white;
     padding: 25px;
-    border-radius: 15px; 
+    border-radius: 20px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     flex: 1;
     display: flex;
@@ -250,7 +250,7 @@ input, textarea {
     margin-top: 8px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 12px; 
+    border-radius: 20px; 
     outline: none;
     font-size: 14px;
 }
@@ -261,7 +261,7 @@ button {
     color: white;
     padding: 15px;
     border: none;
-    border-radius: 12px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -279,7 +279,7 @@ button:hover {
     color: white !important;
     text-decoration: none;
     padding: 8px 20px;
-    border-radius: 50px; 
+    border-radius: 20px; 
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
