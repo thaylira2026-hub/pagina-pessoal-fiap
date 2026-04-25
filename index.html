@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Thays Lira de Oliveira</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/formacao.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header>
@@ -33,7 +41,7 @@
             </div>
         </div>
     </header>
-
+ 
     <main>
         <section id="sobre">
             <h2>Sobre Mim</h2>
@@ -46,12 +54,12 @@
                 </div>
             </div>
         </section>
-
+ 
         <section id="objetivo">
             <h2>Objetivo Profissional</h2>
             <p>Como estudante de Análise e Desenvolvimento de Sistemas, busco minha primeira oportunidade de estágio para aplicar e expandir meus conhecimentos técnicos em um ambiente profissional desafiador. Meu objetivo vai além de desenvolver sistemas; quero contribuir para um ecossistema digital mais inclusivo e representativo.</p>
         </section>
-
+ 
         <section id="habilidades">
             <h2>Habilidades</h2>
             <div class="grid-container">
@@ -60,12 +68,12 @@
                     <ul>
                         <li>Git e GitHub</li>
                         <li>Banco de Dados Relacional</li>
-                        <li>Estrutura de Dados</li>
                         <li>Desenvolvimento Web (HTML, CSS)</li>
-                        <li>Java</li>
+                        <li>Java Script</li>
+                        <li>Domain Driven Design using Java</li>
                     </ul>
                 </div>
-
+ 
                 <div class="card soft">
                     <h3>Soft Skills</h3>
                     <ul>
@@ -75,39 +83,42 @@
                         <li>Gestão de Tempo</li>
                     </ul>
                 </div>
-                
+               
                 <div class="card tech">
                     <h3>Tecnologias</h3>
                     <ul>
                         <li>Python</li>
                         <li>Java</li>
-                        <li>SQL</li>
                         <li>brModelo</li>
                         <li>Visual Studio Code</li>
+                        <li>IntelliJ</li>
+                        <li>Data Modeler</li>
                     </ul>
                 </div>
             </div>
         </section>
-
+ 
         <section id="formacao">
             <h2>Formação Acadêmica</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Período</th>
-                        <th>Curso / Evento</th>
-                        <th>Instituição</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>2026 - Atual</td><td>Análise e Desenvolvimento de Sistemas</td><td>FIAP</td></tr>
-                    <tr><td>2026</td><td>Cursos de Python / Java Fundamentos / Front End / Chatbot</td><td>Alura</td></tr>
-                    <tr><td>2025</td><td>FIAP NEXT 2025</td><td>FIAP</td></tr>
-                    <tr><td>2021</td><td>Gestão de TI</td><td>SENAI</td></tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Curso / Evento</th>
+                            <th>Instituição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2026 - Atual</td><td>Análise e Desenvolvimento de Sistemas</td><td>FIAP</td></tr>
+                        <tr><td>2026</td><td>Cursos de Python / Java Fundamentos / Front End / Chatbot</td><td>Alura</td></tr>
+                        <tr><td>2025</td><td>FIAP NEXT 2025</td><td>FIAP</td></tr>
+                        <tr><td>2021</td><td>Gestão de TI</td><td>SENAI</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-
+ 
         <section id="projetos">
             <h2>Projetos em Desenvolvimento</h2>
             <div class="grid-container">
@@ -127,13 +138,13 @@
                     <span class="tag">Social</span>
                 </article>
                 <article class="projeto-card">
-                    <h3>Heal Tech - Chatbot</h3>
-                    <p>Assistente virtual focado em agendamentos de saúde.</p>
+                    <h3>Startup Dayscape - Chatbot</h3>
+                    <p>Assistente virtual dedicada a oferecer experiências únicas em um ambiente tranquilo e natural. Garantindo que os clientes recebam respostas rápidas e precisas sempre que precisarem de assistência.</p>
                     <span class="tag">AI</span>
                 </article>
             </div>
         </section>
-        
+       
         <section id="contato">
             <h2>Contato</h2>
             <div class="contato-container">
@@ -142,34 +153,36 @@
                     <form>
                         <label>Nome:</label>
                         <input type="text" placeholder="Digite seu nome completo">
-                        
+                       
                         <label>E-mail:</label>
                         <input type="email" placeholder="seu@email.com">
-                        
+                       
                         <label>Mensagem:</label>
                         <textarea placeholder="Digite sua mensagem"></textarea>
-                        
+                       
                         <button type="submit">Enviar Mensagem</button>
                     </form>
                 </div>
-
+ 
                 <div class="info-box">
                     <h3>E-mail</h3>
                     <p><a href="mailto:thay.lira2026@gmail.com">thay.lira2026@gmail.com</a></p>
-                    <div class="redes sociais">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/thaylira2026-hub" target="_blank" class="btn-social">GitHub</a>
-                        <a href="https://www.linkedin.com/in/thays-lira-538619186" target="_blank" class="btn-social">LinkedIn</a>
+                    <div class="redes-sociais">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/thaylira2026-hub" target="_blank" class="btn-social">GitHub</a>
+                            <a href="https://www.linkedin.com/in/thays-lira-538619186" target="_blank" class="btn-social">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+ 
     <footer>
         <p>&copy; 2026 Thays Lira de Oliveira - Todos os direitos reservados</p>
         <p><em>"Desenvolvido com dedicação e entusiasmo"</em> 🚀</p>
     </footer>
 </body>
 </html>
+ 

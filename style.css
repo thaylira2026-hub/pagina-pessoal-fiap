@@ -6,74 +6,74 @@
     --accent: #FACC15;
     --radius: 20px;
 }
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+ 
 body {
     background-color: var(--background);
     color: var(--text);
 }
-
+ 
 header {
     background-color: var(--primary);
     color: white;
     padding-bottom: 50px;
     border-bottom: 6px solid var(--accent);
 }
-
+ 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px 8%;
     align-items: center;
 }
-
+ 
 .logo-area {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: bold;
 }
-
+ 
 .logo-img {
     height: 40px;
     border-radius: 20px;
 }
-
+ 
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-
+ 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 0.85rem;
     text-transform: uppercase;
 }
-
+ 
 .hero-content {
     text-align: center;
     margin-top: 40px;
 }
-
+ 
 .hero-content h1 {
     font-size: 2.5rem;
 }
-
+ 
 .cta-container {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 25px;
 }
-
+ 
 .btn {
     padding: 12px 25px;
     border-radius: 20px;
@@ -82,21 +82,21 @@ nav a {
     display: inline-block;
     transition: 0.3s ease;
 }
-
+ 
 .btn-white { background: white; color: var(--primary); }
 .btn-outline { border: 2px solid white; color: white; }
-
+ 
 .btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+ 
 section {
     padding: 40px 8%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
+ 
 h2 {
     color: var(--primary);
     border-left: 6px solid var(--secondary);
@@ -104,26 +104,26 @@ h2 {
     margin-bottom: 30px;
     font-size: 1.8rem;
 }
-
+ 
 .sobre-content {
     display: flex;
     gap: 40px;
     align-items: center;
 }
-
+ 
 .sobre-img-perfil {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
 }
-
+ 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
+ 
 .card {
     background: white;
     border-radius: var(--radius);
@@ -132,34 +132,34 @@ h2 {
     transition: 0.3s ease;
     padding-bottom: 20px;
 }
-
+ 
 .card:hover {
     transform: translateY(-8px);
 }
-
+ 
 .card h3 {
     padding: 15px;
     text-align: center;
     color: white;
     margin-bottom: 15px;
 }
-
+ 
 .hard h3 { background: var(--secondary); }
 .soft h3 { background: var(--primary); }
 .tech h3 { background: var(--secondary); }
-
-
+ 
+ 
 .card ul {
     list-style: none;
     padding: 0 20px;
 }
-
+ 
 .card li {
     padding: 8px 0;
     font-size: 0.9rem;
     border-bottom: 1px solid #eee;
 }
-
+ 
 table {
     width: 100%;
     border-collapse: collapse;
@@ -167,19 +167,19 @@ table {
     border-radius: 20px;
     overflow: hidden;
 }
-
+ 
 table th {
     background: #164E63;
     color: white;
     padding: 15px;
     text-align: left;
 }
-
+ 
 table td {
     padding: 15px;
     border-bottom: 1px solid #eee;
 }
-
+ 
 .projeto-card {
     background: white;
     padding: 25px;
@@ -188,11 +188,11 @@ table td {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: 0.3s ease;
 }
-
+ 
 .projeto-card:hover {
     transform: translateY(-8px);
 }
-
+ 
 .tag {
     background: #164E63;
     color: white;
@@ -202,13 +202,13 @@ table td {
     display: inline-block;
     margin-top: 10px;
 }
-
+ 
 .social-links {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
-
+ 
 .social-links a {
     background: #F472B6;
     color: white;
@@ -217,11 +217,11 @@ table td {
     text-decoration: none;
     transition: 0.3s;
     display:flex;
-
+ 
 }
 .redes-sociais h3 {
     margin-top: 20px;
-    
+   
 }
 .contato-container {
     display: flex;
@@ -231,11 +231,11 @@ table td {
     padding: 20px 0;
     margin-top: 20px;
 }
-
+ 
 .form-box, .info-box {
     background: white;
     padding: 25px;
-    border-radius: 20px; 
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     flex: 1;
     display: flex;
@@ -243,21 +243,21 @@ table td {
     flex-direction: column;
     gap: 20px;
 }
-
+ 
 input, textarea {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 20px; 
+    border-radius: 20px;
     outline: none;
     font-size: 14px;
 }
-
+ 
 button {
     width: 100%;
-    background-color: #F472B6; 
+    background-color: #F472B6;
     color: white;
     padding: 15px;
     border: none;
@@ -267,30 +267,30 @@ button {
     transition: 0.3s;
     margin-top: 20px;
 }
-
+ 
 button:hover {
     background-color: #e85aa4;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
+ 
 .btn-social {
     background-color: #F472B6;
     color: white !important;
     text-decoration: none;
     padding: 8px 20px;
-    border-radius: 20px; 
+    border-radius: 20px;
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
 }
 #contato label {
-    color: #164E63; 
-    font-weight: bold; 
-    display: block; 
-    margin-bottom: 5px; 
+    color: #164E63;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
-
+ 
 footer {
     text-align: center;
     padding: 30px;
@@ -298,3 +298,4 @@ footer {
     color: white;
     margin-top: 40px;
 }
+ 

@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hard h3 { background: var(--secondary); } 
+.soft h3 { background: var(--primary); }   
+.tech h3 { background: var(--secondary); } 
+
+.card ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.card li {
+    padding: 8px 0;
+    font-size: var(--font-size-small);
+    border-bottom: 1px solid #eee;
+    color: var(--text);
+}
+
+.card li:last-child {
+    border-bottom: none;
+}
