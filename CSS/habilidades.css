@@ -1,6 +1,5 @@
 .grid-container {
     display: grid;
-   
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px 0;
@@ -24,6 +23,9 @@
     text-align: center;
     color: white;
     margin-bottom: 15px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: var(--font-family);
 }
 
 .hard h3 { background: var(--secondary); } 
@@ -40,8 +42,24 @@
     font-size: var(--font-size-small);
     border-bottom: 1px solid #eee;
     color: var(--text);
+    font-family: var(--font-family);
 }
 
 .card li:last-child {
     border-bottom: none;
+}
+
+
+.accordion-content { 
+    display: none; 
+    overflow: hidden; 
+    transition: 0.3s; 
+}
+
+.accordion-content.open { 
+    display: block; 
+}
+
+.accordion-header { 
+    cursor: pointer; 
 }

@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     padding: 20px 8%;
     align-items: center;
+    position: relative;
 }
 
 .logo-area {
@@ -17,6 +18,15 @@ header {
     align-items: center;
     gap: 10px;
     font-weight: bold;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: var(--font-size-title); 
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    z-index: 1001; 
 }
 
 nav ul {
@@ -28,9 +38,19 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: var(--font-size-small);
     text-transform: uppercase;
-    font-family: var(--font-main);
+    font-family: var(--font-family);
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero-content h1 { 
+    font-size: var(--font-size-hero);
+    font-family: var(--font-family);
 }
 
 .cta-container {
@@ -49,14 +69,14 @@ nav a {
     transition: 0.3s ease;
 }
 
-.btn-white, .btn-white:visited { 
+.btn-white { 
     background: white; 
-    color: var(--primary) ; 
+    color: var(--primary); 
 }
 
-.btn-outline, .btn-outline:visited { 
+.btn-outline { 
     border: 2px solid white; 
-    color: white ; 
+    color: white; 
 }
 
 .btn:hover {
@@ -64,19 +84,38 @@ nav a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero-content {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.hero-content h1 { 
-    font-size: 2.5rem;
-    font-family: var(--font-main);
-}
-
-
 @media (max-width: 768px) {
-    .navbar { flex-direction: column; gap: 15px; }
-    nav ul { gap: 10px; flex-wrap: wrap; justify-content: center; }
-    .hero-content h1 { font-size: 1.8rem; }
+    .navbar {
+        padding: 15px 5%; 
+    }
+   
+    .menu-toggle { 
+        display: block; 
+    }
+
+    .navbar nav {
+        display: none; 
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary);
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+        border-bottom: 4px solid var(--accent);
+    }
+
+    .navbar nav.active { 
+        display: block; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: var(--font-size-hero);
+    }
 }

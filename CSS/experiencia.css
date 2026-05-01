@@ -19,6 +19,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
+    font-family: var(--font-family);
 }
 
 table th {
@@ -26,11 +27,13 @@ table th {
     color: white;
     padding: 15px;
     text-align: left;
+    font-size: var(--font-size-small);
 }
 
 table td {
     padding: 15px;
     border-bottom: 1px solid #eee;
+    color: var(--text);
 }
 
 table tr:nth-child(even) {

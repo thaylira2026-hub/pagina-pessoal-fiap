@@ -19,7 +19,7 @@
 
 .projeto-card h3 {
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: var--(font-size-title);
 }
 
 .tag {
@@ -27,7 +27,7 @@
     color: white;
     padding: 4px 10px;
     border-radius: var(--radius);
-    font-size: 0.75rem;
+    font-size: var(--font-size-small);
     display: inline-block;
     align-self: flex-start;
 }

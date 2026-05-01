@@ -21,6 +21,7 @@
                 <img src="https://ui-avatars.com/api/?background=164E63&color=ffffff&name=Thays+Lira+de+Oliveira" alt="Avatar TO" class="logo-img">
                 <span>Portfólio</span>
             </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
@@ -64,7 +65,7 @@
             <h2>Habilidades</h2>
             <div class="grid-container">
                 <div class="card hard">
-                    <h3>Hard Skills</h3>
+                    <h3 onclick="toggleAccordion(this)" style="cursor:pointer;">Hard Skills &#9660</h3><div class="accordion-content" style="display: none;">
                     <ul>
                         <li>Git e GitHub</li>
                         <li>Banco de Dados Relacional</li>
@@ -73,26 +74,29 @@
                         <li>Domain Driven Design using Java</li>
                     </ul>
                 </div>
+            </div>
  
                 <div class="card soft">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Trabalho em equipe</li>
-                        <li>Comunicação Assertiva</li>
-                        <li>Adaptabilidade</li>
-                        <li>Gestão de Tempo</li>
-                    </ul>
-                </div>
+    <h3 onclick="toggleAccordion(this)" style="cursor:pointer;">Soft Skills &#9660</h3><div class="accordion-content" style="display: none;">
+        <ul>
+            <li>Trabalho em equipe</li>
+            <li>Comunicação Assertiva</li>
+            <li>Adaptabilidade</li>
+            <li>Gestão de Tempo</li>
+        </ul>
+    </div>
+</div>
                
                 <div class="card tech">
-                    <h3>Tecnologias</h3>
+                    <h3 onclick="toggleAccordion(this)" style="cursor:pointer;">Tecnologias &#9660</h3>
+                    <div class="accordion-content" style="display: none;">
                     <ul>
                         <li>Python</li>
-                        <li>Java</li>
                         <li>brModelo</li>
                         <li>Visual Studio Code</li>
                         <li>IntelliJ</li>
                         <li>Data Modeler</li>
+                        <li>Node-Red</li>
                     </ul>
                 </div>
             </div>
@@ -183,6 +187,10 @@
         <p>&copy; 2026 Thays Lira de Oliveira - Todos os direitos reservados</p>
         <p><em>"Desenvolvido com dedicação e entusiasmo"</em> 🚀</p>
     </footer>
+
+    <button id="btn-topo" onclick="voltarAoTopo()" title="Voltar ao Topo">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
  
