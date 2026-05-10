@@ -36,11 +36,115 @@ button {
     transition: 0.3s;
 }
 button:hover {
-    background-color: #e85aa4;
+    background-color: var(--secondary);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
     .contato-container { flex-direction: column; } 
+}
+
+.input-error {
+    border: 2px solid #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    display: none; 
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.error-message::before {
+    content: "⚠️";
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+.error-visible {
+    display: flex;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(4px); 
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInModal 0.4s ease-out;
+}
+
+@keyframes fadeInModal {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.icon-success {
+    font-size: 60px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.modal-body h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.modal-body p {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-modal {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-modal:hover {
+    background-color: var(--primary);
 }
