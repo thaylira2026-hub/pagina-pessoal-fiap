@@ -1,0 +1,29 @@
+.sobre-content {
+     display: flex;
+     gap: 50px;
+     align-items: center;
+     max-width: 1000px;      
+     margin: 0 auto;
+    }
+ 
+.sobre-img-perfil {
+    width: 210px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    display: block;
+    flex-shrink: 0;
+}
+ 
+@media (max-width: 768px) {
+    .sobre-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+ 
+.sobre-img-perfil {
+    width:  200px;
+    height: 200px;          
+    }
+}
+}
