@@ -1,0 +1,13 @@
+:root {
+    --primary: #164E63;
+    --secondary: #F472B6;
+    --background: #ECFEFF;
+    --text: #083344;
+    --accent: #FACC15;
+    --radius: 20px;
+    --font-family: sans-serif;
+    --font-size-small: 0.85rem
+    --font-size-hero: 4.5rem;
+    --font-size-title: 1.5rem;
+}
+ 
