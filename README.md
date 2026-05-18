@@ -21,5 +21,6 @@ Este projeto tem como finalidade criar uma landing page pessoal para apresentar 
 * **Nome:** Thays Lira de Oliveira
 * **RM:** 568799.
 
-* ## 🌐 Site publicado
+
+## 🌐 Site publicado
 https://thaylira2026-hub.github.io/pagina-pessoal-fiap/

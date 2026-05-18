@@ -1,0 +1,121 @@
+header {
+    background-color: var(--primary);
+    color: white;
+    padding-bottom: 50px;
+    border-bottom: 6px solid var(--accent);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    align-items: center;
+    position: relative;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: var(--font-size-title); 
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    z-index: 1001; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    font-family: var(--font-family);
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero-content h1 { 
+    font-size: var(--font-size-hero);
+    font-family: var(--font-family);
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-white { 
+    background: white; 
+    color: var(--primary); 
+}
+
+.btn-outline { 
+    border: 2px solid white; 
+    color: white; 
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%; 
+    }
+   
+    .menu-toggle { 
+        display: block; 
+    }
+
+    .navbar nav {
+        display: none; 
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary);
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+        border-bottom: 4px solid var(--accent);
+    }
+
+    .navbar nav.active { 
+        display: block; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: var(--font-size-hero);
+    }
+}
