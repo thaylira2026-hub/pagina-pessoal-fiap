@@ -31,3 +31,20 @@
     display: inline-block;
     align-self: flex-start;
 }
+.repo-link {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: var(--font-size-small);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: auto;
+    padding-top: 8px;
+    transition: 0.3s ease;
+}
+
+.repo-link:hover {
+    color: var(--secondary);
+    gap: 8px;
+}

@@ -148,3 +148,69 @@ button:hover {
 .btn-modal:hover {
     background-color: var(--primary);
 }
+
+.info-box h3 {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.info-box h3:first-child {
+    margin-top: 0;
+}
+
+.email-box {
+    border: 2px solid var(--secondary);
+    border-radius: var(--radius);
+    padding: 12px;
+    background-color: #ffffff;
+    display: block;
+    word-break: break-all; 
+}
+
+.email-box a {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.email-box a:hover {
+    opacity: 0.8;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-social {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: var(--secondary);
+    color: #ffffff;
+    border-color: var(--secondary);
+}
+
+.redes-sociais {
+    margin-top: 25px; 
+}
+
+.info-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
